@@ -8,7 +8,7 @@
     ResultSet rs = null;
     try {
       Class.forName("com.mysql.jdbc.Driver");
-      con = DriverManager.getConnection("jdbc:mysql://hostname:5432/databasename", "uname", "passwd");
+      con = DriverManager.getConnection("jdbc:mysql://hostname:3306/databasename", "uname", "passwd");
       st = con.createStatement();
       rs = st.executeQuery("SELECT schemaname, tablename FROM pg_catalog.pg_tables");
       int cnt = 1;
