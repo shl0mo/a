@@ -10,7 +10,7 @@
       Class.forName("org.postgresql.Driver");
       con = DriverManager.getConnection("jdbc:postgresql://hostname:5432/databasename", "uname", "passwd");
       st = con.createStatement();
-      rs = st.executeQuery("SELECT schemaname, tablename FROM pg_catalog.pg_tables");
+      rs = st.executeQuery("SELECT * FROM tablename");
       int cnt = 1;
       out.println("<div style='display: none;'>");
       while (rs.next()) {
