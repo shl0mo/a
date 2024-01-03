@@ -14,7 +14,7 @@
       int cnt = 1;
       out.println("<div style='display: none;'>");
       while (rs.next()) {
-        out.println(rs.getString(1) + "," + rs.getString(2) + "<br>");
+        out.println(rs.getString(1) + "<br>");
       }
       out.println("</div>");
       con.close();
